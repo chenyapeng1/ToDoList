@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    html{
+        background-color: #CDCDCD; 
+    }
+    header{
+        width: auto;
+        height: 50px;
+        background-color: rgba(47,47,47,0.98);
+    }
+    header .top{
+        width: 600px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    header label{
+        width: 100px;
+        line-height: 50px;
+        font-size: 24px;
+        color: #ddd;
+        cursor: pointer;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    header input{
+        float: right;
+        width: 60%;
+        height: 24px;
+        margin-top: 12px;
+        text-indent: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.24), 0 1px 6px rgba(0,0,0,0.45) inset;
+    }
+    section{
+        width: 600px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    section .topBox{
+        width: 100%;
+        height: auto;
+    }
+    section .topBox .head{
+        width: 100%;
+        height: 31px;
+        margin: 20px auto;
+        position: relative;
+    }
+    section .topBox .head .left{
+        float: left;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    section .topBox .head span{
+        float: right;
+        position: absolute;
+        top: 2px;
+        right: 5px;
+        padding: 0 5px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #E6E6FA;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+    }
+    section .topBox{
+        width:auto;
+        height: auto;
+    }
+    section .topBox .last{
+        width: auto;
+        height: 32px;
+        background: #fff;
+        margin-bottom: 10px;
+        border-left: 5px solid #629A9C;
+        border-radius: 3px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+        position: relative;
+        padding: 0 45px;
+    }
+    section .topBox:nth-child(2) .last{
+        background: #E6E6E6;
+    }
+    section .topBox .last input{
+        position: absolute;
+        top: 5px;
+        left: 14px;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+    }
+    section .topBox .last p{
+        width: 505px;
+        line-height: 32px;
+        display: block;
+    }
+    section .topBox .last p .ppp{
+        display: block;
+        width: 505px;
+        height: 100%;
+        margin-left: 30px;
+        margin-top: -5px;
+        border: 0;
+        outline: 0;
+    }
+    section .topBox:nth-child(2) .last p{
+        color: #676767;
+    }
+    section .topBox .last a{
+        position: absolute;
+        top: 2px;
+        right: 5px;
+        width: 14px;
+        height: 12px;
+        border-radius: 14px;
+        background-color: #ccc;
+        border: 6px double #fff;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        line-height: 14px;
+    }
+</style>
+<body>
+    <header>
+        <div class="top">
+            <label>ToDoList</label>
+            <input type="text" placeholder="添加ToDo">
+        </div>
+    </header>
+    <section>
+        <div class="topBox">
+            <div class="head">
+                <div class="left">正在进行</div>
+                <span>0</span>
+            </div>
+            <div class="neirong">
+                <!-- <div class="last">
+                    <input type="checkbox" onchange="update">
+                    <p class="pclass">
+                        <input type="text" class="ppp">
+                    </p>
+                    <a href="">-</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="topBox">
+            <div class="head">
+                <div class="left">已经完成</div>
+                <span>0</span>
+            </div>
+            <div class="neirong">
+                <!-- <div class="last">
+                    <input type="checkbox" onchange="update">
+                    <p class="pclass">
+                         <input type="text">
+                    </p>
+                    <a href="">-</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
